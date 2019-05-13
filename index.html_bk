@@ -49,5 +49,7 @@ $(function(){
 				</section>
 			</div>
 			<br>
+			<input type="submit" id="confirm" name="confirm" value="確定">
+			<font color="#ff0000"><?php echo htmlspecialchars($errorMessage, ENT_QUOTES); ?></font>
     </body>
 </html>
