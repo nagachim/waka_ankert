@@ -38,6 +38,5 @@ if(isset($_POST['login'])){
 
 	pg_close($result);
 	header("Location:questionnaire.php");
-	
 }
 ?>
