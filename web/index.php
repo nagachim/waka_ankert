@@ -40,3 +40,29 @@ if(isset($_POST['login'])){
 	header("Location:questionnaire.php");
 }
 ?>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>若月アンケート</title>
+<link rel= "stylesheet" href="style.css">
+<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+</head>
+	<body>
+		<div id="modal_window">
+			<h1>あなたの若月ベストショットアンケート</h1>
+			<form id="loginForm" name="loginForm" action="" method="POST" accept-charset="UTF-8">
+				<fieldset>
+					<legend>ログイン情報</legend>
+					<label for="name">ユーザ名　：</label><input type="text" id="name" name="name" placeholder="ユーザ名を入力" value="">
+					<br>
+					<br>
+					<input type="submit" id="login" name="login" value="ログイン">
+					<div><font color="#ff0000"><?php echo htmlspecialchars($errorMessage, ENT_QUOTES); ?></font></div>
+				</fieldset>
+			</form>
+		</div>
+		<br>
+	</body>
+</html>
