@@ -19,8 +19,9 @@ if(isset($_POST['confirm'])){
 	if(empty($_POST['waka'])){
 		$errorMessage='画像を一つを選択してください';
 	}
-	$checked = $("input[name='waka']:checked").val();
-	$insert = sprinf("Insert Into questionnaire(name,gazou,systimestamp)values('%s','%s',current_timestamp);",$name,$checked);
+	//ラジオボタンのvalue値取得
+	$value = $_GET['waka'];
+	$insert = sprinf("Insert Into questionnaire(name,gazou,systimestamp)values('%s','%s',current_timestamp);",$name,$value);
 }
 ?>
 
