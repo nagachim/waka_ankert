@@ -54,7 +54,7 @@ $(function(){
 </head>
 	<body>
 		<div id="modal_window">
-		<p><?php echo htmlspecialchars($name, ENT_QUOTES); ?>で参加中</p>
+		<p><?php echo htmlspecialchars($_SESSION['NAME'], ENT_QUOTES); ?>で参加中</p>
 		<h1>あなたの若月ベストショットアンケート</h1>
 		<h2>ながちむが独断で選出した若月画像！<br>あなたが好きな若月を１つ選択してください。<br>※画像を選択で拡大されます</h2>
 			<section>
