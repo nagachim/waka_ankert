@@ -18,6 +18,9 @@ if(isset($_POST['login'])){
 		$errorMessage = '名前を入力してください';
 		
 	}else{
+	
+		$name = $_POST['name'];
+	
 		//DB接続情報作成
 		$connectString = "host={$db['host']} dbname={$db['dbname']} port=5432 user={$db['user']} password={$db['pass']}";
 		//DB接続
@@ -26,15 +29,15 @@ if(isset($_POST['login'])){
 			$errorMessage = '予期せぬエラーが発生';
 			exit();
 		}
-		$select = sprintf("SELECT * FROM questionnaire WHERE name = %s",$_POST['name']);
+		$select = sprintf("SELECT * FROM questionnaire WHERE name = '%s'",$name);
 		$selectresult = pg_query($select);
 		$array = pg_fetch_array($selectresult,0,PGSQL_NUM);
 		
 		//入力した名前とDBにある名前が一致した場合
-		if($_POST['name'] = $array[1]){
+		if($name = $array[1]){
 			$errorMesage = '入力された名前は既に使われています。';
 		}else{
-			$_SESSION['name'] = $_POST['name'];
+			$_SESSION['name'] = $name;
 			pg_close($result);
 			header("Location: questionnaire.php");
 		}
