@@ -16,16 +16,17 @@ $errorMessage = "";
 if(isset($_POST['login'])){
 	if(empty($_POST['name'])){
 		$errorMessage = '名前を入力してください';
+		exit();
 	}
 	
 	//DB接続情報作成
-		$connectString = "host={$db['host']} dbname={$db['dbname']} port=5432 user={$db['user']} password={$db['pass']}";
-		//DB接続
-		if(!$result = pg_connect($connectString)){
-			//接続失敗
-			$errorMessage = '予期せぬエラーが発生';
-			exit();
-		}
+	$connectString = "host={$db['host']} dbname={$db['dbname']} port=5432 user={$db['user']} password={$db['pass']}";
+	//DB接続
+	if(!$result = pg_connect($connectString)){
+		//接続失敗
+		$errorMessage = '予期せぬエラーが発生';
+		exit();
+	}
 	$select = sprintf("SELECT * FROM questionnaire WHERE name = %s",$_POST['name']);
 	$selectresult = pg_query($select);
 	$array = pg_fetch_array($selectresult,0,PGSQL_NUM);

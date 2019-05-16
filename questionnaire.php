@@ -52,32 +52,31 @@ $(function(){
 </script>
 </head>
 	<body>
-
-			<div id="modal_window">
-			<h1>あなたの若月ベストショットアンケート</h1>
-			<h2>ながちむが独断で選出した若月画像！<br>あなたが好きな若月を１つ選択してください。<br>※画像を選択で拡大されます</h2>
-				<section>
-					<table border="1" cellspacing="0" cellpadding="1">
-					<tr>
-						<td>
-							<a href="img/waka1.jpg" class="modal"><img src="img/waka1_thum.jpg" alt="若月１" title="わかちゅき"></a>
-							<br>
-							<input type="radio" name="waka" value="waka1"><label>若月１</label>
-						</td>
-						<td>
-							<a href="img/waka2.jpg" class="modal"><img src="img/waka2_thum.jpg" alt="若月２" title="わかちゅき"></a>
-							<br>
-							<input type="radio" name="waka" value="waka2"><label>若月２</label>
-						</td>
-					</tr>
-					</table>
-				</section>
-			</div>
-			<br>
-			<label for="username">twitterネームorニックネーム：</label><input type="text" id="username" name="username" placeholder="20文字以内" value="">
-			<br>
-			<input type="submit" id="confirm" name="confirm" value="確定">
-			<font color="#ff0000"><?php echo htmlspecialchars($errorMessage, ENT_QUOTES); ?></font>
-			<p>お一人様、一度限りの投票でお願いいたします。
+		<div id="modal_window">
+		<h1>あなたの若月ベストショットアンケート</h1>
+		<h2>ながちむが独断で選出した若月画像！<br>あなたが好きな若月を１つ選択してください。<br>※画像を選択で拡大されます</h2>
+			<section>
+				<table border="1" cellspacing="0" cellpadding="1">
+				<tr>
+					<td>
+						<a href="img/waka1.jpg" class="modal"><img src="img/waka1_thum.jpg" alt="若月１" title="わかちゅき"></a>
+						<br>
+						<input type="radio" name="waka" value="waka1"><label>若月１</label>
+					</td>
+					<td>
+						<a href="img/waka2.jpg" class="modal"><img src="img/waka2_thum.jpg" alt="若月２" title="わかちゅき"></a>
+						<br>
+						<input type="radio" name="waka" value="waka2"><label>若月２</label>
+					</td>
+				</tr>
+				</table>
+			</section>
+		</div>
+		<br>
+		<label for="username">twitterネームorニックネーム：</label><input type="text" id="username" name="username" placeholder="20文字以内" value="">
+		<br>
+		<input type="submit" id="confirm" name="confirm" value="確定">
+		<font color="#ff0000"><?php echo htmlspecialchars($errorMessage, ENT_QUOTES); ?></font>
+		<p>お一人様、一度限りの投票でお願いいたします。
     </body>
 </html>
