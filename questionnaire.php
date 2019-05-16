@@ -10,7 +10,7 @@ $db['user'] = $dbUrl['user'];  // username
 $db['pass'] = $dbUrl['pass'];  // pass
 $db['dbname'] = ltrim($dbUrl['path'], '/');  // db名
 
-$name = $_SESSION('NAME');
+$name = $_SESSION['NAME'];
 
 //エラーメッセージの初期化
 $errorMessage = "";
@@ -53,6 +53,7 @@ $(function(){
 </head>
 	<body>
 		<div id="modal_window">
+		<p><?php echo htmlspecialchars($name, ENT_QUOTES); ?>で参加中</p>
 		<h1>あなたの若月ベストショットアンケート</h1>
 		<h2>ながちむが独断で選出した若月画像！<br>あなたが好きな若月を１つ選択してください。<br>※画像を選択で拡大されます</h2>
 			<section>
@@ -72,8 +73,6 @@ $(function(){
 				</table>
 			</section>
 		</div>
-		<br>
-		<label for="username">twitterネームorニックネーム：</label><input type="text" id="username" name="username" placeholder="20文字以内" value="">
 		<br>
 		<input type="submit" id="confirm" name="confirm" value="確定">
 		<font color="#ff0000"><?php echo htmlspecialchars($errorMessage, ENT_QUOTES); ?></font>

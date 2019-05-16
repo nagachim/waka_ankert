@@ -37,7 +37,7 @@ if(isset($_POST['login'])){
 		if($name = $array[1]){
 			$errorMesage = '入力された名前は既に使われています。';
 		}else{
-			$_SESSION['name'] = $name;
+			$_SESSION['NAME'] = $name;
 			pg_close($result);
 			header("Location: questionnaire.php");
 		}
@@ -61,7 +61,7 @@ if(isset($_POST['login'])){
 			<form id="loginForm" name="loginForm" action="" method="POST" accept-charset="UTF-8">
 				<fieldset>
 					<legend>ログイン情報</legend>
-					<label for="name">ユーザ名　：</label><input type="text" id="name" name="name" placeholder="ユーザ名を入力" value="">
+					<label for="name">twitterネームorニックネーム：</label><input type="text" id="name" name="name" placeholder="20文字以内" value="">
 					<br>
 					<br>
 					<input type="submit" id="login" name="login" value="ログイン">
