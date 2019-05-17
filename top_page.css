@@ -25,6 +25,7 @@ h1{
 
 #div tyuui{
 	text-align:center;
+	margin: 0 auto;
 }
 
 #div login fieldset{
@@ -46,6 +47,7 @@ h1{
 }
 
 #div tyuui p{
+	display: inline-block;
 	text-align:left;
 	font-size:15px;
 }
