@@ -78,8 +78,8 @@ input[type=radio] {
 
 input[type=submit]{
 	width:200px;
-	height:30px;
-	font-size:20px;
+	height:40px;
+	font-size:22px;
 }
 
 p{
@@ -131,4 +131,9 @@ table{
 .modal_window tr td img{
   border: 0;
   margin: 5px;
+}
+
+.exit p{
+	text-align:center;
+	font-size:34px;
 }

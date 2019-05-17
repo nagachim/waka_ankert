@@ -22,6 +22,7 @@ if(isset($_POST['confirm'])){
 		//ラジオボタンのvalue値取得
 		$value = $_GET['waka'];
 		$insert = sprinf("Insert Into questionnaire(name,gazou,systimestamp)values('%s','%s',current_timestamp);",$name,$value);
+		header("Location: thanks.html");
 	}
 }
 ?>
@@ -61,6 +62,7 @@ $(function(){
 			<p class="txt">ながちむが独断で選出した若月画像！<br>あなたが好きな若月を１つ選択してください。<br>※画像を選択で拡大されます<p/>
 		</div>
 		<div class="modal_window">
+		<form id="ankertForm" name="ankertForm" action="" method="POST" accept-charset="UTF-8">
 			<section>
 				<table border="1" cellspacing="0" cellpadding="1">
 				<tr>
@@ -92,10 +94,11 @@ $(function(){
 				</tr>
 				</table>
 			</section>
+			<br>
+			<input type="submit" id="confirm" name="confirm" value="確定">
+			<font color="#ff0000"><?php echo htmlspecialchars($errorMessage, ENT_QUOTES); ?></font>
+			<p>お一人様、一度限りの投票でお願いいたします。
+		</form>
 		</div>
-		<br>
-		<input type="submit" id="confirm" name="confirm" value="確定">
-		<font color="#ff0000"><?php echo htmlspecialchars($errorMessage, ENT_QUOTES); ?></font>
-		<p>お一人様、一度限りの投票でお願いいたします。
     </body>
 </html>
