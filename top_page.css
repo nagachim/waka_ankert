@@ -23,29 +23,29 @@ h1{
 	color: blue;
 }
 
-fieldset{
+#div tyuui{
+	text-align:center;
+}
+
+#div login fieldset{
 	text-align:center;
 	border: 1px solid #000000;
 }
 
-input[type=text]{
+#div login input[type=text]{
 	width:410px;
 	height:30px;
 	font-size:20px;
 }
 
-input[type=submit]{
+#div login input[type=submit]{
 	width:150px;
 	height:30px;
 	font-size:20px;
 	
 }
 
-p{
+#div tyuui p{
 	text-align:left;
 	font-size:15px;
 }
-div #tyuui{
-	text-align:center;
-}
-
