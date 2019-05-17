@@ -1,7 +1,7 @@
 html{
 	margin: 0 auto;
 	margin-top: 0 auto;
-	width: 700px;
+	width: 580px;
 	background: lightskyblue;
 	height: 500px;
 	text-align:center;
@@ -19,7 +19,7 @@ h1{
 	border-left: 15px solid #8a2be2;
 	border-bottom: 3px solid #8a2be2;
 	padding: 10px;
-	width: 600px;
+	width: 580px;
 	text-align:center;
 	color: blue;
 }
@@ -40,7 +40,7 @@ h1{
 	border: 3px solid #000000;
 	background:#e6e6fa;
 	font-size:20px;
-	width:600px;
+	width:580px;
 }
 .login legend{
 	text-align:left;
