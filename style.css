@@ -44,6 +44,10 @@ input[type=text]{
 	height:30px;
 }
 
+p{
+	font-size:15px;
+}
+
 table{
 	left:10px;
 }
