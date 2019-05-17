@@ -18,10 +18,11 @@ $errorMessage = "";
 if(isset($_POST['confirm'])){
 	if(empty($_POST['waka'])){
 		$errorMessage='画像を一つを選択してください';
+	}else{
+		//ラジオボタンのvalue値取得
+		$value = $_GET['waka'];
+		$insert = sprinf("Insert Into questionnaire(name,gazou,systimestamp)values('%s','%s',current_timestamp);",$name,$value);
 	}
-	//ラジオボタンのvalue値取得
-	$value = $_GET['waka'];
-	$insert = sprinf("Insert Into questionnaire(name,gazou,systimestamp)values('%s','%s',current_timestamp);",$name,$value);
 }
 ?>
 
@@ -53,7 +54,7 @@ $(function(){
 </script>
 </head>
 	<body>
-			<p><?php echo htmlspecialchars($_SESSION['NAME'], ENT_QUOTES); ?>で参加中</p>
+		<p><?php echo htmlspecialchars($_SESSION['NAME'], ENT_QUOTES); ?>で参加中</p>
 		<h1>あなたの若月ベストショットアンケート</h1>
 		<h2>ながちむが独断で選出した若月画像！<br>あなたが好きな若月を１つ選択してください。<br>※画像を選択で拡大されます</h2>
 		<div id="modal_window">
@@ -61,14 +62,19 @@ $(function(){
 				<table border="1" cellspacing="0" cellpadding="1">
 				<tr>
 					<td>
-						<a href="img/waka1.jpg" class="modal"><img src="img/waka1_thum.jpg" alt="若月１" title="わかちゅき"></a>
+						<a href="img/waka1.jpg" class="modal"><img src="img/waka1_thum.jpg" alt="若月１" title="わかちゅき１"></a>
 						<br>
-						<input type="radio" name="waka" value="waka1"><label>若月１</label>
+						<input type="radio" name="waka" value="waka1"><label>乃木恋</label>
 					</td>
 					<td>
-						<a href="img/waka2.jpg" class="modal"><img src="img/waka2_thum.jpg" alt="若月２" title="わかちゅき"></a>
+						<a href="img/waka2.jpg" class="modal"><img src="img/waka2_thum.jpg" alt="若月２" title="わかちゅき２"></a>
 						<br>
-						<input type="radio" name="waka" value="waka2"><label>若月２</label>
+						<input type="radio" name="waka" value="waka2"><label>イケメン</label>
+					</td>
+					<td>
+						<a href="img/waka3.jpg" class="modal"><img src="img/waka3_thum.jpg" alt="若月３" title="わかちゅき３"></a>
+						<br>
+						<input type="radio" name="waka" value="waka2"><label>OFFICIAL</label>
 					</td>
 				</tr>
 				</table>
