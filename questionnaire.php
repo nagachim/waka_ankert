@@ -38,17 +38,17 @@ if(isset($_POST['confirm'])){
 <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
 <script>
 $(function(){
-	$("body").append("<div id='layer'></div><div id='layer_min'></div>");
-	$("#layer").click(function(){
+	$("body").append("<div id='layer_min'></div><div id='layer_max'></div>");
+	$("#layer_min").click(function(){
 		$(this).hide();
-		$("#layer_min").hide();
+		$("#layer_max").hide();
 	});
 	$("a.modal").click(function(){
-		$("#layer").show();
-		$("#layer_min").show().html("<img src='img/close.png' class='close' />"+"<img src='"+$(this).attr("href")+"'>");
-		$("#layer_min img.close").click(function(){
+		$("#layer_min").show();
+		$("#layer_max").show().html("<img src='img/close.png' class='close' />"+"<img src='"+$(this).attr("href")+"'>");
+		$("#layer_max img.close").click(function(){
+		$("#layer_max").hide();
 		$("#layer_min").hide();
-		$("#layer").hide();
 		});
 		return false;
 	});

@@ -91,7 +91,7 @@ table{
 	left:10px;
 }
 
-#layer{
+#layer_min{
   display: none;
   position: fixed ;
   top: 0;
@@ -102,7 +102,7 @@ table{
   opacity: 0.60;
   filter: alpha(opacity=60);
 } 
-#layer_min{
+#layer_max{
   display: none;
   position: fixed;
   top: 50%;
@@ -113,7 +113,7 @@ table{
   border-radius: 8px;
   background-color: #fff;
 } 
-#layer img.close{
+#layer_max img.close{
   position: absolute;
   top: -10px;
   right: -10px;
