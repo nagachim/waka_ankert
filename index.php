@@ -30,13 +30,13 @@ if(isset($_POST['login'])){
 			$errorMessage = '予期せぬエラーが発生';
 			exit();
 		}
-		$select = sprintf("SELECT * FROM questionnaire WHERE name = '%s'",$name);
+		$select = sprintf("SELECT name FROM questionnaire WHERE name = '%s'",$name);
 		$selectresult = pg_query($select);
 		$array = pg_fetch_array($selectresult,0,PGSQL_NUM);
 		
 		//入力した名前とDBにある名前が一致した場合
-		if($name = $array[1]){
-			$errorMesage = '入力された名前は既に使われています。';
+		if($name == $array[0]){
+			$errorMessage = '入力された名前は既に使われています。';
 			$_SESSION['NAME'] = "";
 		}else{
 			pg_close($result);

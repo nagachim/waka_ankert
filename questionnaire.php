@@ -20,9 +20,21 @@ if(isset($_POST['confirm'])){
 		$errorMessage='画像を一つを選択してください';
 	}else{
 		//ラジオボタンのvalue値取得
-		$value = $_GET['waka'];
-		$insert = sprinf("Insert Into questionnaire(name,gazou,systimestamp)values('%s','%s',current_timestamp);",$name,$value);
-		header("Location: thanks.html");
+		$value = $_POST['waka'];
+		
+		//DB接続情報作成
+		$connectString = "host={$db['host']} dbname={$db['dbname']} port=5432 user={$db['user']} password={$db['pass']}";
+		//DB接続
+		if(!$result = pg_connect($connectString)){
+			//接続失敗
+			$errorMessage = '予期せぬエラーが発生';
+			exit();
+		}
+		$insert = sprintf("Insert Into questionnaire(name,gazou,systimestamp)values('%s','%s',current_timestamp);",$name,$value);
+		$insertresult = pg_query($insert);
+		if($insertresult != ""){
+			header("Location: thanks.html");
+		}
 	}
 }
 ?>
