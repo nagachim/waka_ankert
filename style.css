@@ -133,9 +133,10 @@ table{
 }
 #modal_window tr td{
   float: left;
-  width:275px;
+
 }
 #modal_window tr td img{
   border: 0;
   margin: 5px;
+    width:275px;
 }
