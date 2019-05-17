@@ -68,8 +68,8 @@ if(isset($_POST['login'])){
 					<div><font color="#ff0000"><?php echo htmlspecialchars($errorMessage, ENT_QUOTES); ?></font></div>
 				</fieldset>
 			</form>
-			<div id="tyuui">
-				<p>※これはながちむの個人的な趣味の為のアンケートです。<br/>
+			<div class="tyuui">
+				<p class="txt">※これはながちむの個人的な趣味の為のアンケートです。<br/>
 				　個人情報は一切頂きたくないので、名前のみの登録となっております。<br/>
 				　お名前の公開などは考えておりません。<br/>
 				　（多くの人に選ばれた画像がどれなのかは公表すると思います。）<br/>
