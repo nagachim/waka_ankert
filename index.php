@@ -51,7 +51,7 @@ if(isset($_POST['login'])){
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="Content-Style-Type" content="text/css">
-<meta name="viewport" content="width=700 initial-scale=1">
+<meta name="viewport" content="width=700,initial-scale="1">
 <title>若月アンケート</title>
 <link rel= "stylesheet" href="top_page.css">
 <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
@@ -74,10 +74,10 @@ if(isset($_POST['login'])){
 				※これはながちむの個人的な趣味の為のアンケートです。<br/>
 				　個人情報は一切頂きたくないので、名前のみ登録して頂きます。<br/>
 				　名前の公開などは考えておりません。<br/>
-				　（どの画像が一番多くの人に選ばれたかくらいの情報公開のみ）<br/>
+				　(どの画像が一番多くの人に選ばれたかくらいの情報公開のみ)<br/>
 				　又、完全同一のお名前が先に登録されていた場合、<br/>
 				　先の画面に進めなくなっておりますので、ご了承ください<br/>
-				　（故にTwitterネームを推奨します。私も把握しやすいので！）<br/>
+				　(故にTwitterネームを推奨します。私も把握しやすいので！)<br/>
 				　若月さん推しには勿論、沢山の人に協力して頂けると嬉しいです！
 				</p>
 			</div>
