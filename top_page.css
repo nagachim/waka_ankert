@@ -1,8 +1,9 @@
 html{
 	margin: 0 auto;
+	margin-top: 0 auto;
 	width: 700px;
 	background: lightskyblue;
-	height: auto;
+	height: 500px;
 	text-align:center;
 }
 
@@ -35,6 +36,7 @@ h1{
 
 .login fieldset{
 	text-align:center;
+	margin: 0 auto;
 	border: 3px solid #000000;
 	background:#e6e6fa;
 	font-size:20px;
