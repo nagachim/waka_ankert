@@ -61,7 +61,7 @@ if(isset($_POST['login'])){
 			<form id="loginForm" name="loginForm" action="" method="POST" accept-charset="UTF-8">
 				<fieldset>
 					<legend>ログイン情報</legend>
-					<label for="name">twitterネームorニックネーム：</label><input type="text" id="name" name="name" placeholder="20文字以内" value="">
+					<label for="name">twitterネームorニックネーム</label><br><input type="text" id="name" name="name" placeholder="20文字以内" value="">
 					<br>
 					<br>
 					<input type="submit" id="login" name="login" value="ログイン">
