@@ -113,22 +113,22 @@ table{
   border-radius: 8px;
   background-color: #fff;
 } 
-#kids_layer img.close{
+#layer img.close{
   position: absolute;
   top: -10px;
   right: -10px;
   cursor: pointer;
 }
-.modal_window tr{
+#modal_window tr{
   width: 560px;
   list-style-type: none;
 }
-.modal_window tr td{
+#modal_window tr td{
   float: left;
     width:265px;
 
 }
-.modal_window tr td img{
+#modal_window tr td img{
   border: 0;
   margin: 5px;
 }

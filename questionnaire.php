@@ -61,7 +61,7 @@ $(function(){
 		<div class="center">
 			<p class="txt">ながちむが独断で選出した若月画像！<br>あなたが好きな若月を１つ選択してください。<br>※画像を選択で拡大されます<p/>
 		</div>
-		<div class="modal_window">
+		<div id="modal_window">
 		<form id="ankertForm" name="ankertForm" action="" method="POST" accept-charset="UTF-8">
 			<section>
 				<table border="1" cellspacing="0" cellpadding="1">
