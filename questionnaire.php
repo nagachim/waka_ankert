@@ -76,6 +76,16 @@ $(function(){
 						<br>
 						<input type="radio" name="waka" value="waka2"><label>OFFICIAL</label>
 					</td>
+					<td>
+						<a href="img/waka4.jpg" class="modal"><img src="img/waka4_thum.jpg" alt="若月４" title="わかちゅき４"></a>
+						<br>
+						<input type="radio" name="waka" value="waka2"><label>ほっぺムギュ</label>
+					</td>
+					<td>
+						<a href="img/waka5.jpg" class="modal"><img src="img/waka5_thum.jpg" alt="若月５" title="わかちゅき５"></a>
+						<br>
+						<input type="radio" name="waka" value="waka2"><label>サヨナラの意味</label>
+					</td>
 				</tr>
 				</table>
 			</section>
