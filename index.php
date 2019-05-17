@@ -57,7 +57,7 @@ if(isset($_POST['login'])){
 </head>
 	<body>
 		<h1>あなたの若月ベストショットアンケート</h1>
-		<div id="login">
+		<div class="login">
 			<form id="loginForm" name="loginForm" action="" method="POST" accept-charset="UTF-8">
 				<fieldset>
 					<legend>ログイン情報</legend>

@@ -1,6 +1,6 @@
 html{
 	margin: 0 auto;
-	width: 800px;
+	width: 700px;
 	background: lightskyblue;
 	height: 1000px;
 	text-align:center;
@@ -13,12 +13,12 @@ body{
 }
 
 h1{
-	  margin: 20px 50px;
-	  font-size: 28px;
-	  border-left: 10px solid #7BAEB5;
-	  border-bottom: 1px solid #7BAEB5;
-	  padding: 10px;
-	  width: 600px;
+	margin: 20px 50px;
+	font-size: 28px;
+	border-left: 10px solid #7BAEB5;
+	border-bottom: 1px solid #7BAEB5;
+	padding: 10px;
+	width: 600px;
 	text-align:center;
 	color: blue;
 }
@@ -33,20 +33,20 @@ h1{
 	font-size:15px;
 }
 
-#div login fieldset{
+.login.fieldset{
 	text-align:center;
 	border: 1px solid #000000;
 }
 
-#div login input[type=text]{
+.login.input[type=text]{
 	width:410px;
 	height:30px;
 	font-size:20px;
 }
 
-#div login input[type=submit]{
+.login.input[type=submit]{
 	width:150px;
-	height:30px;
+	height:35px;
 	font-size:20px;
 	
 }
