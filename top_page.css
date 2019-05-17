@@ -24,12 +24,13 @@ h1{
 
 fieldset{
 	text-align:center;
-	border: 1px solid #cccccc;
+	border: 1px solid #000000;
 }
 
 input[type=text]{
 	width:200px;
 	height:30px;
+	font-size:20px;
 }
 
 p{
