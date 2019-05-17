@@ -3,7 +3,7 @@ html{
 	margin-top: 0 auto;
 	width: 560px;
 	background: lightskyblue;
-	height: 500px;
+	height: auto;
 	text-align:center;
 }
 
@@ -133,7 +133,7 @@ table{
 }
 #modal_window tr td{
   float: left;
-    width:260px;
+    width:265px;
 
 }
 #modal_window tr td img{
