@@ -31,6 +31,7 @@ if(isset($_POST['confirm'])){
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="viewport" content="width=700,initial-scale="1">
 <title>若月アンケート</title>
 <link rel= "stylesheet" href="style.css">
 <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
