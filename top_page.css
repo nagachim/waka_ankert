@@ -36,6 +36,11 @@ h1{
 .login fieldset{
 	text-align:center;
 	border: 3px solid #000000;
+	background:#e6e6fa;
+}
+.login legend{
+	text-align:left;
+	font-size:24px;
 }
 
 .login input[type=text]{
