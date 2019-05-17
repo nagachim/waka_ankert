@@ -1,0 +1,34 @@
+html{
+	margin: 0 auto;
+	width: 800px;
+	background: lightskyblue;
+	height: 1000px;
+}
+
+body{
+	margin: 0;
+  	padding: 0;
+  	height: 100%;
+}
+
+h1{
+	text-align:center;
+	font-size:38px;
+	color: blue;
+	font-family: meiryo;
+}
+
+section{
+	text-align:center;
+	border: 1px solid #cccccc;
+}
+
+input[type=text]{
+	width:200px;
+	height:30px;
+}
+
+p{
+	text-align:left;
+	font-size:15px;
+}

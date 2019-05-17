@@ -52,7 +52,7 @@ if(isset($_POST['login'])){
 <meta charset="UTF-8">
 <meta http-equiv="Content-Style-Type" content="text/css">
 <title>若月アンケート</title>
-<link rel= "stylesheet" href="style.css">
+<link rel= "stylesheet" href="top_page.css">
 <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
 </head>
 	<body>
