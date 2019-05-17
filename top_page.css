@@ -12,13 +12,17 @@ body{
 }
 
 h1{
+	  margin: 20px 50px;
+	  font-size: 28px;
+	  border-left: 10px solid #7BAEB5;
+	  border-bottom: 1px solid #7BAEB5;
+	  padding: 10px;
+	  width: 600px;
 	text-align:center;
-	font-size:38px;
 	color: blue;
-	font-family: meiryo;
 }
 
-section{
+fieldset{
 	text-align:center;
 	border: 1px solid #cccccc;
 }

@@ -56,7 +56,7 @@ if(isset($_POST['login'])){
 <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
 </head>
 	<body>
-		<div id="modal_window">
+		<div>
 			<h1>あなたの若月ベストショットアンケート</h1>
 			<form id="loginForm" name="loginForm" action="" method="POST" accept-charset="UTF-8">
 				<fieldset>
@@ -68,10 +68,10 @@ if(isset($_POST['login'])){
 					<div><font color="#ff0000"><?php echo htmlspecialchars($errorMessage, ENT_QUOTES); ?></font></div>
 				</fieldset>
 				<p>※これはながちむの個人的な趣味の為のアンケートです。<br/>
-				個人情報は一切頂きたくないので、名前のみの登録となっております。<br/>
-				お名前の公開などは考えておりません。（多くの人に選ばれた画像がどれなのかは公表すると思います。）
-				又、完全同一のお名前が先に登録されていた場合、<br/>
-				アンケート画面に移動できなくなっておりますので、ご了承ください（故にTwitterネームを推奨します。私も把握しやすいので！）
+				　　個人情報は一切頂きたくないので、名前のみの登録となっております。<br/>
+				　　お名前の公開などは考えておりません。（多くの人に選ばれた画像がどれなのかは公表すると思います。）<br/>
+				　　又、完全同一のお名前が先に登録されていた場合、アンケート画面に移動できなくなっておりますので、<br/>
+				　　ご了承ください（故にTwitterネームを推奨します。私も把握しやすいので！）
 				</p>
 			</form>
 		</div>
