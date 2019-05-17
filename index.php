@@ -20,6 +20,7 @@ if(isset($_POST['login'])){
 	}else{
 	
 		$name = $_POST['name'];
+		$_SESSION['NAME'] = $name;
 	
 		//DB接続情報作成
 		$connectString = "host={$db['host']} dbname={$db['dbname']} port=5432 user={$db['user']} password={$db['pass']}";
@@ -36,8 +37,8 @@ if(isset($_POST['login'])){
 		//入力した名前とDBにある名前が一致した場合
 		if($name = $array[1]){
 			$errorMesage = '入力された名前は既に使われています。';
+			$_SESSION['NAME'] = "";
 		}else{
-			$_SESSION['NAME'] = $name;
 			pg_close($result);
 			header("Location: questionnaire.php");
 		}
