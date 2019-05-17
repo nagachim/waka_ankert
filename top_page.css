@@ -41,6 +41,10 @@ input[type=submit]{
 	
 }
 
+div #tyuui{
+	text-align:center;
+}
+
 p{
 	text-align:left;
 	font-size:15px;

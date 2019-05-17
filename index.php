@@ -67,7 +67,9 @@ if(isset($_POST['login'])){
 					<input type="submit" id="login" name="login" value="ログイン">
 					<div><font color="#ff0000"><?php echo htmlspecialchars($errorMessage, ENT_QUOTES); ?></font></div>
 				</fieldset>
-				<center>
+			</form>
+		</div>
+		<div id="tyuui">
 				<p>※これはながちむの個人的な趣味の為のアンケートです。<br/>
 				　個人情報は一切頂きたくないので、名前のみの登録となっております。<br/>
 				　お名前の公開などは考えておりません。<br/>
@@ -76,8 +78,6 @@ if(isset($_POST['login'])){
 				　アンケート画面に移動できなくなっておりますので、<br/>
 				　ご了承ください（故にTwitterネームを推奨します。私も把握しやすいので！）
 				</p>
-				</center>
-			</form>
 		</div>
 		<br>
 	</body>
