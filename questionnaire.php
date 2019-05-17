@@ -37,17 +37,17 @@ if(isset($_POST['confirm'])){
 <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
 <script>
 $(function(){
-	$("body").append("<div id='mom_layer'></div><div id='kids_layer'></div>");
-	$("#mom_layer").click(function(){
+	$("body").append("<div id='layer'></div><div id='layer_min'></div>");
+	$("#layer").click(function(){
 		$(this).hide();
-		$("#kids_layer").hide();
+		$("#layer_min").hide();
 	});
 	$("a.modal").click(function(){
-		$("#mom_layer").show();
-		$("#kids_layer").show().html("<img src='img/close.png' class='close' />"+"<img src='"+$(this).attr("href")+"'>");
-		$("#kids_layer img.close").click(function(){
-		$("#kids_layer").hide();
-		$("#mom_layer").hide();
+		$("#layer").show();
+		$("#layer_min").show().html("<img src='img/close.png' class='close' />"+"<img src='"+$(this).attr("href")+"'>");
+		$("#layer_min img.close").click(function(){
+		$("#layer_min").hide();
+		$("#layer").hide();
 		});
 		return false;
 	});
@@ -55,10 +55,12 @@ $(function(){
 </script>
 </head>
 	<body>
-		<p><?php echo htmlspecialchars($_SESSION['NAME'], ENT_QUOTES); ?>で参加中</p>
+		<p><?php echo htmlspecialchars($_SESSION['NAME'], ENT_QUOTES); ?> で参加中</p>
 		<h1>あなたの若月ベストショットアンケート</h1>
-		<h2>ながちむが独断で選出した若月画像！<br>あなたが好きな若月を１つ選択してください。<br>※画像を選択で拡大されます</h2>
-		<div id="modal_window">
+		<div class="center">
+			<p class="txt">ながちむが独断で選出した若月画像！<br>あなたが好きな若月を１つ選択してください。<br>※画像を選択で拡大されます<p/>
+		</div>
+		<div class="modal_window">
 			<section>
 				<table border="1" cellspacing="0" cellpadding="1">
 				<tr>
