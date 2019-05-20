@@ -7,8 +7,6 @@
 <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
 <script>
 function fnClose(){
-    var winObj = window.opener.open(window.opener.location,'_self');
-    winObj.close();                                   //再表示した親ウインドウを閉じる
 	window.opener = window;
 	var win = window.open(location.href,"_self");
 	win.close();
