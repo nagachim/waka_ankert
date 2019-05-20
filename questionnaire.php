@@ -68,6 +68,7 @@ $(function(){
 </script>
 </head>
 	<body>
+		<br>
 		<p><?php echo htmlspecialchars($_SESSION['NAME'], ENT_QUOTES); ?> で参加中</p>
 		<h1>あなたの若月ベストショットアンケート</h1>
 		<div class="center">
