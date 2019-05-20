@@ -12,6 +12,12 @@ function fnClose(){
 	win.close();
 }
 </script>-->
+<script>
+window.onunload = function() {
+  var winObj = window.open('', 'thanks');        //サブウインドウを空画面で上書き
+  winObj.close();                                 //開いた空画面を閉じる
+}
+</script>
 <title>若月アンケート</title>
 <link rel= "stylesheet" href="style.css">
 </head>
