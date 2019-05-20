@@ -5,19 +5,21 @@
 <meta http-equiv="Content-Style-Type" content="text/css">
 <meta name="viewport" content="width=700,initial-scale="1">
 <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
-<!--<script>
+<script>
 function fnClose(){
+  if( (window.opener) && (!window.opener.closed) ){   //親ウインドウが開かれているか？
+                                                              //親ウインドウを再表示
+    var winObj = window.opener.open(window.opener.location,'_self');
+    winObj.close();                                   //再表示した親ウインドウを閉じる
+  }else{
+    alert('親ウインドウは閉じられています');
+  }
 	window.opener = window;
 	var win = window.open(location.href,"_self");
 	win.close();
 }
-</script>-->
-<script>
-window.onunload = function() {
-  var winObj = window.open('', '_blank');        //サブウインドウを空画面で上書き
-  winObj.close();                                 //開いた空画面を閉じる
-}
 </script>
+
 <title>若月アンケート</title>
 <link rel= "stylesheet" href="style.css">
 </head>
@@ -28,8 +30,8 @@ window.onunload = function() {
 		<h1>あなたの若月ベストショットアンケート</h1>
 		<div class="exit">
 			<p>ご協力ありがとうございました！</p>
-			<a href="javascript:window.open('about:blank','_self').close();">画面を閉じる</a>
-			<!--<input type="button" onclick="fnClose()" value="×閉じる" />-->
+			<!--<a href="javascript:window.open('about:blank','_self').close();">画面を閉じる</a>-->
+			<input type="button" onclick="fnClose()" value="×閉じる" />
 		</div>
 		<br>
 	</body>
