@@ -9,10 +9,11 @@ html{
 
 body{
 	margin: 0;
-  	padding: 0;
-  	height: 100%;
-  	background:#87cefa;
-  		margin-top: 50px;
+	padding: 0;
+	height: 100%;
+	width: 560px;
+	background:#87cefa;
+	margin-top: 50px;
 }
 
 /*
