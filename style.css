@@ -27,62 +27,6 @@ h1{
 	color: blue;
 }
 */
-/*
-.demo {
-  width: 500px;
-  margin: 0 auto;
-  padding: 10px 0;
-  font-family: sans-serif;
-  font-size: 20px;
-  color:blue;
-}
-.heading {
-  margin: 10px 0
-}
-.demo10 .heading {
-  position: relative;
-  overflow: hidden;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-}
-.demo10 .heading:before,
-.demo10 .heading:after {
-  content: "";
-  display: block;
-  border: 2px solid #3cb3e4;
-  height: 36px;
-  width: 20px;
-  position: absolute;
-}
-.demo10 .heading:after {
-  right: 0;
-  top: 0;
-}
-.demo10 .heading span:before,
-.demo10 .heading span:after {
-  content: "";
-  display: block;
-  background: #87cefa;
-  width: 30px;
-  height: 55px;
-}
-.demo10 .heading span:before {
-  border-left: 2px solid #3cb3e4;
-  transform: rotate(-30deg);
-  position: absolute;
-  left: 9px;
-  top: -15px;
-}
-.demo10 .heading span:after {
-  border-right: 2px solid #3cb3e4;
-  transform: rotate(-30deg);
-  position: absolute;
-  right: 9px;
-  top: 0px;
-  z-index: 2;
-}
-*/
 h1{
   position:relative;
   margin:30px -1px;

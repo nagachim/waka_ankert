@@ -107,7 +107,7 @@ $(function(){
 				</table>
 			</section>
 			<br>
-			<input type="submit" id="confirm" name="confirm" value="確定">
+			<input type="submit" id="confirm" name="confirm" value="確定" target="_blank">
 			<font color="#ff0000"><?php echo htmlspecialchars($errorMessage, ENT_QUOTES); ?></font>
 			<p>お一人様、一度限りの投票でお願いいたします。
 		</form>
