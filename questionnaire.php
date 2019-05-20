@@ -79,29 +79,29 @@ $(function(){
 				<table border="1" cellspacing="0" cellpadding="1">
 				<tr>
 					<td>
-						<a href="img/waka1.jpg" class="modal"><img src="img/waka1_thum.jpg" alt="若月１" title="わかちゅき１"></a>
+						<a href="img/waka1.jpg" class="modal"><img src="img/waka1_thum.jpg" title="若１"></a>
 						<br>
 						<input type="radio" name="waka" value="waka1"><label>乃木恋</label>
 					</td>
 					<td>
-						<a href="img/waka2.jpg" class="modal"><img src="img/waka2_thum.jpg" alt="若月２" title="わかちゅき２"></a>
+						<a href="img/waka2.jpg" class="modal"><img src="img/waka2_thum.jpg" title="若２"></a>
 						<br>
 						<input type="radio" name="waka" value="waka2"><label>イケメン</label>
 					</td>
 					<td>
-						<a href="img/waka3.jpg" class="modal"><img src="img/waka3_thum.jpg" alt="若月３" title="わかちゅき３"></a>
+						<a href="img/waka3.jpg" class="modal"><img src="img/waka3_thum.jpg" title="若３"></a>
 						<br>
-						<input type="radio" name="waka" value="waka2"><label>OFFICIAL</label>
+						<input type="radio" name="waka" value="waka3"><label>OFFICIAL</label>
 					</td>
 					<td>
-						<a href="img/waka4.jpg" class="modal"><img src="img/waka4_thum.jpg" alt="若月４" title="わかちゅき４"></a>
+						<a href="img/waka4.jpg" class="modal"><img src="img/waka4_thum.jpg" title="若４"></a>
 						<br>
-						<input type="radio" name="waka" value="waka2"><label>ほっぺムギュ</label>
+						<input type="radio" name="waka" value="waka4"><label>ほっぺムギュ</label>
 					</td>
 					<td>
-						<a href="img/waka5.jpg" class="modal"><img src="img/waka5_thum.jpg" alt="若月５" title="わかちゅき５"></a>
+						<a href="img/waka5.jpg" class="modal"><img src="img/waka5_thum.jpg" title="若５"></a>
 						<br>
-						<input type="radio" name="waka" value="waka2"><label>サヨナラの意味</label>
+						<input type="radio" name="waka" value="waka5"><label>サヨナラの意味</label>
 					</td>
 				</tr>
 				</table>
