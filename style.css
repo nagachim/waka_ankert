@@ -11,7 +11,6 @@ body{
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	width: 560px;
 	background:#87cefa;
 	margin-top: 50px;
 }
@@ -126,7 +125,7 @@ h2{
 	border: 3px solid #000000;
 	background:#e6e6fa;
 	font-size:20px;
-	width:560px;
+	width:520px;
 }
 .login legend{
 	text-align:left;
