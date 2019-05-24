@@ -16,10 +16,6 @@ $errorMessage = "";
 if(isset($_POST['login'])){
 	if(empty($_POST['name'])){
 		$errorMessage = '名前を入力してください';
-		
-	}elseif(strlen($_POST['name']) > 40){
-		$errorMessage = '名前は２０文字以内に収めてください';
-	
 	}else{
 	
 		$name = $_POST['name'];
@@ -66,7 +62,7 @@ if(isset($_POST['login'])){
 			<form id="loginForm" name="loginForm" action="" method="POST" accept-charset="UTF-8">
 				<fieldset>
 					<legend>ログイン情報</legend>
-					<label for="name">twitterネームorニックネーム</label><br><input type="text" id="name" name="name" placeholder="20文字以内" value="">
+					<label for="name">twitterネームorニックネーム</label><br><input type="text" id="name" name="name" placeholder="20文字以内" maxlength='20' value="">
 					<br>
 					<br>
 					<input type="submit" id="login" name="login" value="ログイン">
