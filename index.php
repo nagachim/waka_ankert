@@ -12,13 +12,12 @@ $db['dbname'] = ltrim($dbUrl['path'], '/');  // db名
 
 //エラーメッセージの初期化
 $errorMessage = "";
-$moji_len = mb_strlen($_POST['name']);
 
 if(isset($_POST['login'])){
 	if(empty($_POST['name'])){
 		$errorMessage = '名前を入力してください';
 		
-	}elseif($moji_len < 20){
+	}elseif(mb_strlen($_POST['name']) < 20){
 		$errorMessage = '名前は２０文字以内に収めてください';
 	
 	}else{
