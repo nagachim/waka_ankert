@@ -17,6 +17,9 @@ if(isset($_POST['login'])){
 	if(empty($_POST['name'])){
 		$errorMessage = '名前を入力してください';
 		
+	}elseif(strlen($_POST['name']) == 40){
+		$errorMessage = '名前は２０文字以内に収めてください';
+	
 	}else{
 	
 		$name = $_POST['name'];

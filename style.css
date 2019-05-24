@@ -138,7 +138,7 @@ table{
   left: 50%;
   z-index: 99;
   transform: translate(-50%, -50%);
-  padding: 32px;
+  padding: 20px;
   border-radius: 8px;
   background-color: #fff;
 } 
@@ -153,8 +153,33 @@ table{
   list-style-type: none;
 }
 #modal_window tr td{
+	float: left;
+	width:135px;
+	height:130px;
+
+}
+#modal_window .row2 td {
   float: left;
-    width:265px;
+    width:135px;
+    height:165px;
+
+}
+#modal_window .row3 td {
+  float: left;
+    width:135px;
+    height:190px;
+
+}
+#modal_window .row4 td {
+  float: left;
+    width:135px;
+    height:170px;
+
+}
+#modal_window .row5 td {
+  float: left;
+    width:552px;
+    height:200px;
 
 }
 #modal_window tr td img{

@@ -72,7 +72,7 @@ $(function(){
 		<p><?php echo htmlspecialchars($_SESSION['NAME'], ENT_QUOTES); ?> で参加中</p>
 		<h1>あなたの若月ベストショットアンケート</h1>
 		<div class="center">
-			<p class="txt">ながちむが独断で選出した若月画像！<br>あなたが好きな若月を１つ選択してください。<br>※画像を選択で拡大されます<p/>
+			<p class="txt">ながちむが独断で選出した若月画像！<br>あなたが可愛いと思う画像を１つ選択してください。<br>※画像を選択で拡大されます<p/>
 		</div>
 		<div id="modal_window">
 		<form id="ankertForm" name="ankertForm" action="" method="POST" accept-charset="UTF-8">
@@ -87,22 +87,90 @@ $(function(){
 					<td>
 						<a href="img/waka2.jpg" class="modal"><img src="img/waka2_thum.jpg" title="若２"></a>
 						<br>
-						<input type="radio" name="waka" value="waka2"><label>イケメン</label>
+						<input type="radio" name="waka" value="waka2"><label>ぷくキュート</label>
 					</td>
 					<td>
 						<a href="img/waka3.jpg" class="modal"><img src="img/waka3_thum.jpg" title="若３"></a>
 						<br>
-						<input type="radio" name="waka" value="waka3"><label>OFFICIAL</label>
+						<input type="radio" name="waka" value="waka3"><label>女子カル</label>
 					</td>
 					<td>
 						<a href="img/waka4.jpg" class="modal"><img src="img/waka4_thum.jpg" title="若４"></a>
 						<br>
-						<input type="radio" name="waka" value="waka4"><label>ほっぺムギュ</label>
+						<input type="radio" name="waka" value="waka4"><label>鎖骨美人</label>
 					</td>
+				</tr>
+				<tr class = "row2">
 					<td>
 						<a href="img/waka5.jpg" class="modal"><img src="img/waka5_thum.jpg" title="若５"></a>
 						<br>
 						<input type="radio" name="waka" value="waka5"><label>サヨナラの意味</label>
+					</td>
+					<td>
+						<a href="img/waka6.jpg" class="modal"><img src="img/waka6_thum.jpg" title="若６"></a>
+						<br>
+						<input type="radio" name="waka" value="waka6"><label>ムギュ</label>
+					</td>
+					<td>
+						<a href="img/waka7.jpg" class="modal"><img src="img/waka7_thum.jpg" title="若７"></a>
+						<br>
+						<input type="radio" name="waka" value="waka7"><label>パレット</label>
+					</td>
+					<td>
+						<a href="img/waka8.jpg" class="modal"><img src="img/waka8_thum.jpg" title="若８"></a>
+						<br>
+						<input type="radio" name="waka" value="waka8"><label>ジコチュー制服</label>
+					</td>
+				</tr>
+				<tr class = "row3">
+					<td>
+						<a href="img/waka9.jpg" class="modal"><img src="img/waka9_thum.jpg" title="若９"></a>
+						<br>
+						<input type="radio" name="waka" value="waka9"><label>クール若</label>
+					</td>
+					<td>
+						<a href="img/waka10.jpg" class="modal"><img src="img/waka10_thum.jpg" title="若１０"></a>
+						<br>
+						<input type="radio" name="waka" value="waka10"><label>宣材写真1</label>
+					</td>
+					<td>
+						<a href="img/waka11.jpg" class="modal"><img src="img/waka11_thum.jpg" title="若１１"></a>
+						<br>
+						<input type="radio" name="waka" value="waka11"><label>箸くん箸くん</label>
+					</td>
+					<td>
+						<a href="img/waka12.jpg" class="modal"><img src="img/waka12_thum.jpg" title="若１２"></a>
+						<br>
+						<input type="radio" name="waka" value="waka12"><label>佑美ニャン</label>
+					</td>
+				</tr>
+				<tr class = "row4">
+					<td>
+						<a href="img/waka13.jpg" class="modal"><img src="img/waka13_thum.jpg" title="若１３"></a>
+						<br>
+						<input type="radio" name="waka" value="waka13"><label>軍団長</label>
+					</td>
+					<td>
+						<a href="img/waka14.jpg" class="modal"><img src="img/waka14_thum.jpg" title="若１４"></a>
+						<br>
+						<input type="radio" name="waka" value="waka14"><label>可愛い彼女感</label>
+					</td>
+					<td>
+						<a href="img/waka15.jpg" class="modal"><img src="img/waka15_thum.jpg" title="若１５"></a>
+						<br>
+						<input type="radio" name="waka" value="waka15"><label>美アップ</label>
+					</td>
+					<td>
+						<a href="img/waka16.jpg" class="modal"><img src="img/waka16_thum.jpg" title="若１６"></a>
+						<br>
+						<input type="radio" name="waka" value="waka16"><label>最高の一枚</label>
+					</td>
+				</tr>
+				<tr class = "row5">
+					<td>
+						<a href="img/waka17.jpg" class="modal"><img src="img/waka17_thum.jpg" title="若１７"></a>
+						<br>
+						<input type="radio" name="waka" value="waka17"><label>れかつき</label>
 					</td>
 				</tr>
 				</table>
